@@ -1,6 +1,5 @@
 from pathlib import Path
 from itertools import islice
-
 import matplotlib.pyplot as plt
 from PIL import Image
 
