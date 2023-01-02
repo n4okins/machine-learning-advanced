@@ -4,13 +4,18 @@ version = "0.1.0"
 description = ""
 authors = ["n4okins <n4okins.developer@gmail.com>"]
 readme = "README.md"
-packages = [{include = "pytorch_advanced"}]
+packages = [
+    {include = "pytorch_advanced"},
+    {include = "nprch", from = "ml_tutorial/nprch"},
+    {include = "datautils", from = "ml_tutorial/datautils"}
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 jupyter = "^1.0.0"
-torch = "^1.13.1"
-torchvision = "^0.14.1"
+torch = "=1.13.1+cu117"
+torchvision = "=0.14.1+cu117"
+torchaudio = "=0.13.1+cu117"
 pillow = "^9.3.0"
 numpy = "^1.24.1"
 matplotlib = "^3.6.2"
